@@ -14,8 +14,8 @@ let codingExam = [
         question: "Who is the father of HTML?",
         answer: "Tim Berners-Lee",
         type: 'HTML', options: [
-            "Tim Berners-Lee",
             "Charles Babbage",
+            "Tim Berners-Lee",
             "Larry Page",
             "Jeff Bezos"
         ]

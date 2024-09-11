@@ -98,3 +98,25 @@ function ShowDetails() {
     })
 
 }
+
+function ShowResult(score){
+    var name = document.querySelectorAll('#userName');
+    var rollNo = document.querySelector('#rollNumber');
+    var userScore = document.querySelector('#userScore');
+    var userImage = document.querySelector('#userImage');
+    document.querySelector('.result-container').style.display = 'block';
+    examContainer.style.display = 'none';
+    name.forEach(function(e){
+    e.innerText = loggedInUser.username;
+
+    })
+    rollNo.innerText = `Roll No. ${loggedInUser.rollNo}`;
+    userImage.src = loggedInUser.image;
+    userScore.innerText = score;
+    // console.log(score)
+}
+
+
+document.querySelector('.ok-button').addEventListener('click', function(){
+    location.reload()
+})

@@ -4,17 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Harshdeep">
     <title>Raretech Exam (New)</title>
     <link rel="shortcut icon" href="./assets/rare.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/login-styles.css">
     <link rel="stylesheet" href="./assets/css/choose.css">
     <link rel="stylesheet" href="./assets/css/rules.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/typing.css">
 
 
     <style>
+        .question-block {
+            height: 312px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
         body {
             height: 100vh;
             width: 100%;
@@ -220,8 +229,7 @@
             <!-- Main Content -->
             <div class="main-content">
                 <div class="question-section" id="question-container">
-                    <h3>Question No</h3>
-                    <p>Question will Appear here</p>
+                    <h3 id="Question">1. What is the Question here?</h3>
                     <form>
                         <label><input type="radio" name="answer" value="51">Options will appear here</label><br>
                         <label><input type="radio" name="answer" value="64">Options will appear here</label><br>
@@ -241,12 +249,33 @@
                         <p><span class="status not-answered"></span> Not Answered</p>
                     </div>
                     <div class="question-navigation">
-                        <div class="question-number"></div>
+                        <div class="question-number status">1</div>
                     </div>
                     <button class="btn-submit" id="SubmitButton">Submit</button>
                 </aside>
             </div>
 
+            
+        </div>
+        <div class="result-container" style="display: none;">
+            <div class="result-header">
+                <img src="userimage.jpg" alt="User Image" id="userImage"> <!-- Replace with user's actual image -->
+                <div class="info">
+                    <h1 id="userName">Harsh Kumar</h1> <!-- Replace with user's actual name -->
+                    <h3 id="rollNumber">Roll No: 1</h3> <!-- Replace with user's actual roll number -->
+                </div>
+            </div>
+    
+            <div class="score">
+                Your Score: <span id="userScore">85</span>/100 <!-- Replace with user's actual score -->
+            </div>
+    
+            <div class="summary">
+                <p>Congratulations, <span id="userName">Harsh</span>! You have successfully completed the exam.</p>
+                <p>Check your results, and feel free to review your answers anytime.</p>
+            </div>
+    
+            <button class="ok-button">OK</button>
         </div>
     </div>
 
@@ -259,8 +288,7 @@
     <script src="./assets/js/questions/basic.js"></script>
     <script src="./assets/js/questions/accounts.js"></script>
     <script src="./assets/js/questions/coding.js"></script>
-    <!-- <script src="./assets/js/exam.js"></script> this was the working -->
-    <script src="./assets/js/exam2.js"></script>
+    <script src="./assets/js/exam.js"></script>
 
 
 </body>

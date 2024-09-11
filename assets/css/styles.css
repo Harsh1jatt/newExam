@@ -1,8 +1,9 @@
-.Exam{
+.Exam {
     height: 100%;
     width: 100%;
 
 }
+
 header {
     background-color: #e8eef6;
     padding: 15px;
@@ -13,22 +14,26 @@ header {
     box-shadow: 10px 0px 10px black;
 }
 
-.header-left{
+.header-left {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.header-left img{
+
+.header-left img {
     border-right: 2px solid blue;
     padding-right: 10px;
 }
+
 .header-left h2 {
     font-size: 1.2em;
     color: #333;
 }
-.header-left .Titles{
+
+.header-left .Titles {
     padding-left: 10px;
 }
+
 .header-right {
     text-align: right;
 }
@@ -46,22 +51,26 @@ header {
     margin-top: 5px;
     font-size: 20px;
 }
-.user-info p{
+
+.user-info p {
     font-weight: bold;
 }
+
 .user-info img {
     width: 60px;
     height: 60px;
     /* border-radius: 50%; */
     margin-right: 10px;
 }
-.user-info .details{
+
+.user-info .details {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
     flex-direction: column;
 }
+
 .nav-tabs {
     display: flex;
     background-color: #f8f9fa;
@@ -101,12 +110,29 @@ header {
 }
 
 .question-section h3 {
-    font-size: 1.2em;
+    font-size: 1.8em;
     margin-bottom: 15px;
+    height: 100px;
+    background: white;
+    padding: 10px;
+    border-bottom: 1px solid #CCCCCC;
 }
 
-.question-section p {
-    margin-bottom: 15px;
+
+.question-section form {
+    font-size: 30px;
+    margin: 19px;
+}
+
+.question-section form label {
+    font-size: 25px;
+    gap: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
 }
 
 .actions {
@@ -117,7 +143,8 @@ header {
     margin-top: 30px;
 }
 
-.actions .btn-review, .actions .btn-clear {
+.actions .btn-review,
+.actions .btn-clear {
     padding: 10px 20px;
     margin-right: 10px;
     border: none;
@@ -154,6 +181,7 @@ header {
     height: 15px;
     display: inline-block;
     margin-right: 10px;
+    background: rgb(131, 236, 255);
 }
 
 .status.answered {
@@ -173,7 +201,7 @@ header {
 }
 
 
-.question-navigation::-webkit-scrollbar{
+.question-navigation::-webkit-scrollbar {
     height: 100%;
     width: 5px;
     background: #E8EEF6;
@@ -181,34 +209,43 @@ header {
     border-radius: 30px;
 }
 
-.question-navigation::-webkit-scrollbar-button{
+.question-navigation::-webkit-scrollbar-button {
     display: none;
 }
-.question-navigation::-webkit-scrollbar-thumb{
+
+.question-navigation::-webkit-scrollbar-thumb {
     background: #4595ff;
     border-radius: 20px;
-}
-
-.question-navigation {
-    box-shadow: inset 2px 2px 10px black ;
-    display: flex;
-    justify-content: left;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    height: 250px;
-    overflow: auto;
-    /* background: blue; */
 }
 
 .question-navigation .question-number {
     width: 25px;
     height: 25px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     margin: 5px;
+    color: white;
+    font-weight: bold;
     border: 1px solid #d6d6d6;
-    background-color: #e8eef6;
     border-radius: 50%;
     cursor: pointer;
 }
+
+.question-navigation {
+    box-shadow: inset 2px 2px 10px black;
+    height: 250px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    grid-auto-rows: min-content;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+
 
 .btn-submit {
     margin-top: 20px;
@@ -229,15 +266,20 @@ footer {
 }
 
 
-.timePlease{
+.timePlease {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 10px;
-    background: #636363;
+    /* background: #636363; */
+    box-shadow: 5px 5px 10px grey;
     font-weight: bolder;
     border-radius: 10px;
     position: absolute;
     right: 20px;
     top: 200px;
-    width: 65px;
+    /* width: 65px; */
 }
 
 

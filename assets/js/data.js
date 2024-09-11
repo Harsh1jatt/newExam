@@ -25,4 +25,3 @@ const usersdata = [
         birthYear: 2005,
     },
 ];
-var arr = ['kuckla', 'akjsdhfkajsdf', 'aksdjf']
