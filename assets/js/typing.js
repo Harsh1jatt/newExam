@@ -117,3 +117,23 @@ inpField.addEventListener("input", initTyping);
 // undefined,
 // Boolean (true, false), 
 // null
+
+
+document.addEventListener('keydown', function(e) {
+    if(e.keyCode == 189 || e.keyCode == 187)   {
+        // console.log(e)
+        document.querySelector('#author').style.display = 'block'
+    } 
+    else{
+        console.log(e.key, e.keyCode)
+    }
+})
+document.addEventListener('keyup', function(e) {
+    if(e.keyCode == 189 || e.keyCode == 187)   {
+        // console.log(e)
+        document.querySelector('#author').style.display = 'none'
+    } 
+    else{
+        console.log(e.key, e.keyCode)
+    }
+})
